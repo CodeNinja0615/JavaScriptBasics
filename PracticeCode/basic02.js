@@ -48,7 +48,8 @@ console.log(filteredMarks)
 // map(function(a,b){ return a-b }) // another way of doing map((a,b)=> a-b)
 
 var sorted_value = filteredMarks.sort()
-var new_sorted_value = filteredMarks.sort(function (a, b) { //---bubble sorting in recurrsive manner
+var new_sorted_value = filteredMarks.sort(
+    function (a, b) { //---bubble sorting in recurrsive manner
     return a - b
 })
 
@@ -58,6 +59,7 @@ console.log(new_sorted_value)
 
 //sort array having Strings in descending order
 let fruits = ["banana", "mango", "pomegranate", "apple"];
-console.log(fruits.sort((a, b) => b.localeCompare(a)));
+console.log(fruits.sort(
+    (a, b) => b.localeCompare(a)));
 console.log(fruits);
 console.log(fruits.sort());

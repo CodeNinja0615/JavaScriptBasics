@@ -11,18 +11,28 @@
  * @return {ListNode}
  */
 var addTwoNumbers = function (l1, l2) {
-    let n1 = "", n2 = "", arr = [];
-    for (let i in l1.reverse()) {
-        n1 += l1[i];
+    let list1 = [], list2 = [];
+
+    while (l1.next != null) {
+        list1.push(l1.data);
+        l1 = l1.next;
     }
-    for (let i in l2.reverse()) {
-        n2 += l2[i];
+    while (l2.next != null) {
+        list2.push(l2.data);
+        l2 = l2.next;
+    }
+    let n1 = "", n2 = "", arr = [];
+    for (let i in list1.reverse()) {
+        n1 += list1[i];
+    }
+    for (let i in list2.reverse()) {
+        n2 += list2[i];
     }
     sum = parseInt(n1) + parseInt(n2)
     for (let i in sum.toString()) {
         arr.push(parseInt(sum.toString()[i]))
     }
-    console.log(arr.reverse())
+    return arr;
 };
 
-addTwoNumbers([2, 4, 3], [5, 6, 4])
+console.log(addTwoNumbers([2, 4, 3], [5, 6, 4]))
