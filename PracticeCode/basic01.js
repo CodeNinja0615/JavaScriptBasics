@@ -1,6 +1,6 @@
 // const Person = require("./basic07") //to import
 import Person from './basic07.js'
-
+//printing output on terminal
 console.log("Hello World");
 
 let a = 4; // can use var for engines before ES6 version(remember: cannot redeclare variable with let keyword)
