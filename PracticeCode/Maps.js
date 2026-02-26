@@ -31,7 +31,7 @@ let excelData = [
   {
     row: 2,
     column: 3,
-  },
+  }
 ];
 let values = ["sameer", "anand"];
 let map2 = new Map();
