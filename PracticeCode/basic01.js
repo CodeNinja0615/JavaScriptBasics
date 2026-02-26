@@ -5,7 +5,7 @@ console.log("Hello World");
 
 let a = 4; // can use var for engines before ES6 version(remember: cannot redeclare variable with let keyword)
 console.log(a);
-console.log(typeof(a));
+console.log(typeof(a)); 
 
 let person = new Person("Sameer ", "Akhtar")
 console.log(person.name)

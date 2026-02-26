@@ -4,7 +4,7 @@ const fruits = new Map([
   ["bananas", 300],
   ["oranges", 200]
 ]);
-console.log(fruits.get("apples"))
+console.log(`the price of apples is ${fruits.get("apples")}`)
 fruits.set()
 fruits.forEach(a=>{
     console.log(a.valueOf())
