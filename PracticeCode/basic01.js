@@ -10,4 +10,4 @@ console.log(typeof(a));
 let person = new Person("Sameer ", "Akhtar")
 console.log(person.name)
 console.log(person.location)
-person.fullName()
+person.fullName();
